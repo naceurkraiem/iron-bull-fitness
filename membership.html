@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Plans - Iron Bull Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <img src="1.png" alt="Iron Bull Fitness Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-title">IRON BULL</span>
+                        <span class="logo-subtitle">FITNESS</span>
+                    </div>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="classes.html" class="nav-link">Classes</a>
+                    <a href="membership.html" class="nav-link active">Membership</a>
+                    <a href="facilities.html" class="nav-link">Facilities</a>
+                    <a href="#" class="nav-link btn-trial">Free Trial</a>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero membership-hero">
+        <div class="container">
+            <h1 class="page-hero-title">MEMBERSHIP PLANS</h1>
+            <p class="page-hero-subtitle">Choose the plan that fits your fitness journey</p>
+        </div>
+    </section>
+
+    <!-- Pricing Toggle -->
+    <section class="pricing-toggle section-padding">
+        <div class="container">
+            <div class="toggle-container">
+                <span class="toggle-label">Billing Cycle:</span>
+                <div class="toggle-switch">
+                    <button class="toggle-btn active" data-cycle="monthly">Monthly</button>
+                    <button class="toggle-btn" data-cycle="annual">Annual (Save 10%)</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="pricing-plans section-padding">
+        <div class="container">
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card basic-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">BASIC</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount" data-monthly="29" data-annual="313">29</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <p class="pricing-subtitle">Essential gym access</p>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <ul class="features-list">
+                            <li class="feature-item included">
+                                <i class="fas fa-check"></i>
+                                <span>Gym access (5AM-10PM)</span>
+                            </li>
+                            <li class="feature-item included">
+                                <i class="fas fa-check"></i>
+                                <span>Basic equipment access</span>
+                            </li>
+                            <li class="feature-item included">
+                                <i class="fas fa-check"></i>
+                                <span>Locker room & showers</span>
+                            </li>
+                            <li class="feature-item excluded">
+                                <i class="fas fa-times"></i>
+                                <span>Group classes</span>
+                            </li>
+                            <li class="feature-item excluded">
+                                <i class="fas fa-times"></i>
+                                <span>24/7 access</span>
+                            </li>
+                            <li class="feature-item excluded">
+                                <i class="fas fa-times"></i>
+                                <span>Guest passes</span>
+                            </li>
+                            <li class="feature-item excluded">
+                                <i class="fas fa-times"></i>
+                                <span>Sauna & steam room</span>
+                            </li>
+                            <li class="feature-item excluded">
+                                <i class="fas fa-times"></i>
+                                <span>Personal training session</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing-footer">
+                        <button class="btn btn-secondary select-plan" data-plan="basic">Select Basic</button>
+                    </div>
+                </div>
+
+                <!-- Pro Plan (Featured) -->
+                <div class="pricing-card pro-card featured">
+                    <div class="featured-badge">MOST POPULAR</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">PRO</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount" data-monthly="59" data-annual="637">59</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <p class="pricing-subtitle">Complete fitness experience</p>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <ul class="features-list">
+                            <li class="feature-item included">
+                                <i class="fas fa-check"></i>
+                                <span><strong>All Basic features</strong></span>
+                            </li>
+                            <li class="feature-item included">
+                                <i class="fas fa-check"></i>
+                                <span>24/7 gym access</span>
+                            </li>
+                            <li class="feature-item included">
+                                <i class="fas fa-check"></i>
+                                <span>All group classes included</span>
+                            </li>
+                            <li class="feature-item included">
+                                <i class="fas fa-check"></i>
+                                <span>Sauna & steam room access</span>
+                            </li>
+                            <li class="feature-item included">
+                                <i class="fas fa-check"></i>
+                                <span>1 guest pass per month</span>
+                            </li>
+                            <li class="feature-item included">
+                                <i class="fas fa-check"></i>
+                                <span>1 personal training session/month</span>
+                            </li>
+                            <li class="feature-item included">
+                                <i class="fas fa-check"></i>
+                                <span>10% supplement discount</span>
+                            </li>
+                            <li class="feature-item excluded">
+                                <i class="fas fa-times"></i>
+                                <span>Priority class booking</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing-footer">
+                        <button class="btn btn-primary select-plan" data-plan="pro">Select Pro</button>
+                    </div>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="pricing-card premium-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">PREMIUM</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount" data-monthly="99" data-annual="1069">99</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <p class="pricing-subtitle">Ultimate fitness package</p>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <ul class="features-list">
+                            <li class="feature-item included">
+                                <i class="fas fa-check"></i>
+                                <span><strong>All Pro features</strong></span>
+                            </li>
+                            <li class="feature-item included">
+                                <i class="fas fa-check"></i>
+                                <span>2 guest passes per month</span>
+                            </li>
+                            <li class="feature-item included">
+                                <i class="fas fa-check"></i>
+                                <span>Priority class booking</span>
+                            </li>
+                            <li class="feature-item included">
+                                <i class="fas fa-check"></i>
+                                <span>20% supplement discount</span>
+                            </li>
+                            <li class="feature-item included">
+                                <i class="fas fa-check"></i>
+                                <span>2 personal training sessions/month</span>
+                            </li>
+                            <li class="feature-item included">
+                                <i class="fas fa-check"></i>
+                                <span>Free locker reservation</span>
+                            </li>
+                            <li class="feature-item included">
+                                <i class="fas fa-check"></i>
+                                <span>Monthly fitness assessment</span>
+                            </li>
+                            <li class="feature-item included">
+                                <i class="fas fa-check"></i>
+                                <span>Complimentary protein shakes</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing-footer">
+                        <button class="btn btn-secondary select-plan" data-plan="premium">Select Premium</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Comparison Table -->
+<section class="comparison section-padding bg-dark">
+    <div class="container">
+        <h2 class="section-title light">PLAN COMPARISON</h2>
+        <div class="comparison-table-container">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Basic</th>
+                        <th>Pro</th>
+                        <th>Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gym Access Hours</td>
+                        <td>5AM-10PM</td>
+                        <td>24/7</td>
+                        <td>24/7</td>
+                    </tr>
+                    <tr>
+                        <td>Group Classes</td>
+                        <td class="text-center"><span class="x-mark">✗</span></td>
+                        <td class="text-center"><span class="check-mark">✓</span></td>
+                        <td class="text-center"><span class="check-mark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Guest Passes (Monthly)</td>
+                        <td class="text-center">0</td>
+                        <td class="text-center">1</td>
+                        <td class="text-center">2</td>
+                    </tr>
+                    <tr>
+                        <td>Personal Training</td>
+                        <td class="text-center">0</td>
+                        <td class="text-center">1 session</td>
+                        <td class="text-center">2 sessions</td>
+                    </tr>
+                    <tr>
+                        <td>Sauna & Steam Room</td>
+                        <td class="text-center"><span class="x-mark">✗</span></td>
+                        <td class="text-center"><span class="check-mark">✓</span></td>
+                        <td class="text-center"><span class="check-mark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Supplement Discount</td>
+                        <td class="text-center">0%</td>
+                        <td class="text-center">10%</td>
+                        <td class="text-center">20%</td>
+                    </tr>
+                    <tr>
+                        <td>Priority Booking</td>
+                        <td class="text-center"><span class="x-mark">✗</span></td>
+                        <td class="text-center"><span class="x-mark">✗</span></td>
+                        <td class="text-center"><span class="check-mark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Monthly Assessment</td>
+                        <td class="text-center"><span class="x-mark">✗</span></td>
+                        <td class="text-center"><span class="x-mark">✗</span></td>
+                        <td class="text-center"><span class="check-mark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Free Protein Shakes</td>
+                        <td class="text-center"><span class="x-mark">✗</span></td>
+                        <td class="text-center"><span class="x-mark">✗</span></td>
+                        <td class="text-center"><span class="check-mark">✓</span></td>
+                    </tr>
+                    <tr>
+                        <td>Locker Reservation</td>
+                        <td class="text-center"><span class="x-mark">✗</span></td>
+                        <td class="text-center"><span class="x-mark">✗</span></td>
+                        <td class="text-center"><span class="check-mark">✓</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+    <!-- Family & Corporate Plans -->
+    <section class="special-plans section-padding">
+        <div class="container">
+            <h2 class="section-title">SPECIAL PLANS</h2>
+            <div class="special-plans-grid">
+                <div class="special-plan-card">
+                    <div class="special-plan-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Family Plan</h3>
+                    <p class="special-plan-price">Add $20/month per person</p>
+                    <p class="special-plan-desc">Add family members to your Pro or Premium plan at a discounted rate.</p>
+                    <ul class="special-plan-features">
+                        <li>Same membership benefits</li>
+                        <li>Shared guest passes</li>
+                        <li>One billing account</li>
+                    </ul>
+                    <button class="btn btn-secondary">Add Family Member</button>
+                </div>
+                
+                <div class="special-plan-card">
+                    <div class="special-plan-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Corporate Membership</h3>
+                    <p class="special-plan-price">From $45/month per employee</p>
+                    <p class="special-plan-desc">Special rates for companies to promote employee wellness.</p>
+                    <ul class="special-plan-features">
+                        <li>Bulk discount pricing</li>
+                        <li>Dedicated account manager</li>
+                        <li>Wellness program support</li>
+                    </ul>
+                    <button class="btn btn-secondary">Request Corporate Quote</button>
+                </div>
+                
+                <div class="special-plan-card">
+                    <div class="special-plan-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Student Discount</h3>
+                    <p class="special-plan-price">15% off all plans</p>
+                    <p class="special-plan-desc">Special pricing for students with valid ID.</p>
+                    <ul class="special-plan-features">
+                        <li>Valid student ID required</li>
+                        <li>Available on all plans</li>
+                        <li>No long-term contract</li>
+                    </ul>
+                    <button class="btn btn-secondary">Verify Student Status</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section-padding bg-dark">
+        <div class="container">
+            <h2 class="section-title light">FREQUENTLY ASKED QUESTIONS</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What's included in the free trial?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our 3-day free trial includes full access to the gym facilities, equipment, and group classes. Personal training sessions and premium amenities are not included in the trial.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I upgrade or downgrade my plan?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, you can change your plan at any time. Upgrades take effect immediately, while downgrades take effect at the start of your next billing cycle.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is there a cancellation fee?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No cancellation fees. You can cancel anytime with 30 days notice. Annual memberships are refunded proportionally for unused months.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Are personal training sessions transferable?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Monthly personal training sessions can be used within the month and don't roll over. They can be transferred to family members on the same account.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What payment methods do you accept?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept all major credit cards, debit cards, and bank transfers. We also offer financing options for annual plans.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I freeze my membership?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, you can freeze your membership for up to 3 months per year for medical or travel reasons with a doctor's note or proof of travel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup CTA -->
+    <section class="signup-cta section-padding">
+        <div class="container">
+            <div class="cta-container">
+                <h2 class="cta-title">READY TO START YOUR FITNESS JOURNEY?</h2>
+                <p class="cta-subtitle">Sign up today and get your first month at 50% off!</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large" id="signupNow">Sign Up Now</button>
+                    <a href="#" class="btn btn-secondary btn-large">Book a Tour</a>
+                </div>
+                <p class="cta-note">Offer valid for new members only. First month discount applies to monthly billing plans.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Modal -->
+    <div class="modal-overlay" id="signupModal">
+        <div class="modal modal-large">
+            <div class="modal-header">
+                <h3>Join Iron Bull Fitness</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="signupForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="selectedPlan">Selected Plan *</label>
+                        <select id="selectedPlan" class="form-control" required>
+                            <option value="">Choose a plan</option>
+                            <option value="basic">Basic - $29/month</option>
+                            <option value="pro">Pro - $59/month</option>
+                            <option value="premium">Premium - $99/month</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="billingCycle">Billing Cycle *</label>
+                        <select id="billingCycle" class="form-control" required>
+                            <option value="monthly">Monthly</option>
+                            <option value="annual">Annual (Save 10%)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" required>
+                            I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            Sign me up for fitness tips and promotional offers
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">Complete Signup</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="1.png" alt="Iron Bull Fitness Logo" class="footer-logo-img">
+                        <div>
+                            <span class="footer-logo-title">IRON BULL FITNESS</span>
+                            <p class="footer-tagline">Forge Your Strength</p>
+                        </div>
+                    </div>
+                    <p class="footer-about">Premium fitness facility dedicated to helping you achieve your strength and wellness goals.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="classes.html" class="footer-link">Classes</a>
+                    <a href="membership.html" class="footer-link">Membership</a>
+                    <a href="facilities.html" class="footer-link">Facilities</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-heading">Contact</h3>
+                    <p class="footer-contact"><i class="fas fa-map-marker-alt"></i> 123 Iron Street, Bull City</p>
+                    <p class="footer-contact"><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p class="footer-contact"><i class="far fa-clock"></i> 24/7 for Pro & Premium Members</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-heading">Free Trial</h3>
+                    <p>Experience Iron Bull Fitness with a 3-day free trial.</p>
+                    <a href="#" class="btn btn-primary">Claim Trial</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Iron Bull Fitness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('show');
+        });
+
+        // Pricing Toggle (Monthly/Annual)
+        const toggleButtons = document.querySelectorAll('.toggle-btn');
+        const priceAmounts = document.querySelectorAll('.price-amount');
+        
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                toggleButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // Update prices
+                const cycle = button.dataset.cycle;
+                priceAmounts.forEach(amount => {
+                    const monthlyPrice = amount.dataset.monthly;
+                    const annualPrice = amount.dataset.annual;
+                    
+                    amount.textContent = cycle === 'monthly' ? monthlyPrice : annualPrice;
+                    
+                    // Update period text
+                    const periodElement = amount.parentElement.querySelector('.price-period');
+                    periodElement.textContent = cycle === 'monthly' ? '/month' : '/year';
+                });
+                
+                // Update plan selection dropdown
+                updatePlanDropdown(cycle);
+            });
+        });
+
+        function updatePlanDropdown(cycle) {
+            const planSelect = document.getElementById('selectedPlan');
+            const options = planSelect.options;
+            
+            if (cycle === 'annual') {
+                options[1].text = 'Basic - $313/year';
+                options[2].text = 'Pro - $637/year';
+                options[3].text = 'Premium - $1069/year';
+            } else {
+                options[1].text = 'Basic - $29/month';
+                options[2].text = 'Pro - $59/month';
+                options[3].text = 'Premium - $99/month';
+            }
+        }
+
+        // Plan Selection
+        const selectPlanButtons = document.querySelectorAll('.select-plan');
+        const signupModal = document.getElementById('signupModal');
+        const modalClose = document.querySelectorAll('.modal-close');
+        const signupNowBtn = document.getElementById('signupNow');
+        const selectedPlanInput = document.getElementById('selectedPlan');
+        
+        selectPlanButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const plan = button.dataset.plan;
+                
+                // Set the selected plan in the modal
+                selectedPlanInput.value = plan;
+                
+                // Show modal
+                signupModal.style.display = 'flex';
+            });
+        });
+        
+        signupNowBtn.addEventListener('click', () => {
+            signupModal.style.display = 'flex';
+        });
+        
+        modalClose.forEach(closeBtn => {
+            closeBtn.addEventListener('click', () => {
+                signupModal.style.display = 'none';
+            });
+        });
+        
+        signupModal.addEventListener('click', (e) => {
+            if (e.target === signupModal) {
+                signupModal.style.display = 'none';
+            }
+        });
+
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Toggle active class
+                question.classList.toggle('active');
+                answer.classList.toggle('active');
+                
+                // Toggle icon
+                if (question.classList.contains('active')) {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+
+        // Signup Form
+        const signupForm = document.getElementById('signupForm');
+        
+        signupForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                plan: document.getElementById('selectedPlan').value,
+                billing: document.getElementById('billingCycle').value
+            };
+            
+            // In a real app, you would send this to a server
+            console.log('Signup data:', formData);
+            
+            // Show success message
+            alert('Thank you for signing up! We will contact you shortly to complete your membership setup.');
+            
+            // Reset form and close modal
+            signupForm.reset();
+            signupModal.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

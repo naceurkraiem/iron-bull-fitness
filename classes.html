@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes & Schedule - Iron Bull Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation (Same as homepage) -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <img src="1.png" alt="Iron Bull Fitness Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-title">IRON BULL</span>
+                        <span class="logo-subtitle">FITNESS</span>
+                    </div>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="classes.html" class="nav-link active">Classes</a>
+                    <a href="membership.html" class="nav-link">Membership</a>
+                    <a href="facilities.html" class="nav-link">Facilities</a>
+                    <a href="#" class="nav-link btn-trial">Free Trial</a>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section for Classes -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-hero-title">CLASSES & SCHEDULE</h1>
+            <p class="page-hero-subtitle">Professional-led group sessions for all fitness levels</p>
+        </div>
+    </section>
+
+    <!-- Class Filter -->
+    <section class="class-filter section-padding">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Classes</button>
+                    <button class="filter-btn" data-filter="strength">Strength</button>
+                    <button class="filter-btn" data-filter="cardio">Cardio</button>
+                    <button class="filter-btn" data-filter="hiit">HIIT</button>
+                    <button class="filter-btn" data-filter="yoga">Yoga & Flex</button>
+                    <button class="filter-btn" data-filter="cycling">Cycling</button>
+                </div>
+                
+                <div class="schedule-toggle">
+                    <span>View:</span>
+                    <button class="view-btn active" data-view="grid"><i class="fas fa-th-large"></i> Grid</button>
+                    <button class="view-btn" data-view="schedule"><i class="fas fa-calendar-alt"></i> Schedule</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Grid View -->
+    <section class="classes-grid-view section-padding" id="gridView">
+        <div class="container">
+            <div class="all-classes-grid">
+                <!-- Strength Class -->
+                <div class="class-detail-card" data-category="strength">
+                    <div class="class-detail-img strength-img">
+                        <span class="class-badge">Strength</span>
+                    </div>
+                    <div class="class-detail-content">
+                        <h3 class="class-detail-title">IRON STRENGTH</h3>
+                        <p class="class-detail-desc">Build muscle and increase power with compound lifts and strength training techniques.</p>
+                        
+                        <div class="class-info-grid">
+                            <div class="class-info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Duration:</strong>
+                                    <span>60 minutes</span>
+                                </div>
+                            </div>
+                            <div class="class-info-item">
+                                <i class="fas fa-fire"></i>
+                                <div>
+                                    <strong>Intensity:</strong>
+                                    <span>High</span>
+                                </div>
+                            </div>
+                            <div class="class-info-item">
+                                <i class="fas fa-user-friends"></i>
+                                <div>
+                                    <strong>Level:</strong>
+                                    <span>All Levels</span>
+                                </div>
+                            </div>
+                            <div class="class-info-item">
+                                <i class="fas fa-dumbbell"></i>
+                                <div>
+                                    <strong>Equipment:</strong>
+                                    <span>Barbells, Dumbbells</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="class-schedule">
+                            <h4>Schedule:</h4>
+                            <ul class="schedule-list">
+                                <li>Mon & Wed: 6:00 AM, 6:00 PM</li>
+                                <li>Tue & Thu: 7:00 AM, 7:00 PM</li>
+                                <li>Sat: 9:00 AM</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="btn btn-primary book-class-btn">Book This Class</button>
+                    </div>
+                </div>
+
+                <!-- HIIT Class -->
+                <div class="class-detail-card" data-category="hiit">
+                    <div class="class-detail-img hiit-img">
+                        <span class="class-badge">HIIT</span>
+                    </div>
+                    <div class="class-detail-content">
+                        <h3 class="class-detail-title">BULL HIIT</h3>
+                        <p class="class-detail-desc">High-intensity interval training to maximize calorie burn and boost metabolism.</p>
+                        
+                        <div class="class-info-grid">
+                            <div class="class-info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Duration:</strong>
+                                    <span>45 minutes</span>
+                                </div>
+                            </div>
+                            <div class="class-info-item">
+                                <i class="fas fa-fire"></i>
+                                <div>
+                                    <strong>Intensity:</strong>
+                                    <span>Very High</span>
+                                </div>
+                            </div>
+                            <div class="class-info-item">
+                                <i class="fas fa-user-friends"></i>
+                                <div>
+                                    <strong>Level:</strong>
+                                    <span>Intermediate+</span>
+                                </div>
+                            </div>
+                            <div class="class-info-item">
+                                <i class="fas fa-dumbbell"></i>
+                                <div>
+                                    <strong>Equipment:</strong>
+                                    <span>Kettlebells, Bodyweight</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="class-schedule">
+                            <h4>Schedule:</h4>
+                            <ul class="schedule-list">
+                                <li>Mon, Wed, Fri: 5:30 PM</li>
+                                <li>Tue, Thu: 7:30 AM</li>
+                                <li>Sat: 10:00 AM</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="btn btn-primary book-class-btn">Book This Class</button>
+                    </div>
+                </div>
+
+                <!-- Yoga Class -->
+                <div class="class-detail-card" data-category="yoga">
+                    <div class="class-detail-img yoga-img">
+                        <span class="class-badge">Yoga</span>
+                    </div>
+                    <div class="class-detail-content">
+                        <h3 class="class-detail-title">POWER YOGA</h3>
+                        <p class="class-detail-desc">Build flexibility, balance, and core strength with dynamic yoga sequences.</p>
+                        
+                        <div class="class-info-grid">
+                            <div class="class-info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Duration:</strong>
+                                    <span>50 minutes</span>
+                                </div>
+                            </div>
+                            <div class="class-info-item">
+                                <i class="fas fa-fire"></i>
+                                <div>
+                                    <strong>Intensity:</strong>
+                                    <span>Medium</span>
+                                </div>
+                            </div>
+                            <div class="class-info-item">
+                                <i class="fas fa-user-friends"></i>
+                                <div>
+                                    <strong>Level:</strong>
+                                    <span>All Levels</span>
+                                </div>
+                            </div>
+                            <div class="class-info-item">
+                                <i class="fas fa-dumbbell"></i>
+                                <div>
+                                    <strong>Equipment:</strong>
+                                    <span>Mat, Blocks</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="class-schedule">
+                            <h4>Schedule:</h4>
+                            <ul class="schedule-list">
+                                <li>Daily: 8:00 AM</li>
+                                <li>Mon, Wed, Fri: 6:00 PM</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="btn btn-primary book-class-btn">Book This Class</button>
+                    </div>
+                </div>
+
+                <!-- Cycling Class -->
+                <div class="class-detail-card" data-category="cycling">
+                    <div class="class-detail-img cycling-img">
+                        <span class="class-badge">Cycling</span>
+                    </div>
+                    <div class="class-detail-content">
+                        <h3 class="class-detail-title">CYCLING RUSH</h3>
+                        <p class="class-detail-desc">Indoor cycling with energizing music and varied terrain simulation.</p>
+                        
+                        <div class="class-info-grid">
+                            <div class="class-info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Duration:</strong>
+                                    <span>45 minutes</span>
+                                </div>
+                            </div>
+                            <div class="class-info-item">
+                                <i class="fas fa-fire"></i>
+                                <div>
+                                    <strong>Intensity:</strong>
+                                    <span>High</span>
+                                </div>
+                            </div>
+                            <div class="class-info-item">
+                                <i class="fas fa-user-friends"></i>
+                                <div>
+                                    <strong>Level:</strong>
+                                    <span>All Levels</span>
+                                </div>
+                            </div>
+                            <div class="class-info-item">
+                                <i class="fas fa-dumbbell"></i>
+                                <div>
+                                    <strong>Equipment:</strong>
+                                    <span>Spin Bike</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="class-schedule">
+                            <h4>Schedule:</h4>
+                            <ul class="schedule-list">
+                                <li>Mon-Fri: 6:30 AM, 5:30 PM</li>
+                                <li>Sat: 8:00 AM, 11:00 AM</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="btn btn-primary book-class-btn">Book This Class</button>
+                    </div>
+                </div>
+
+                <!-- Cardio Class -->
+                <div class="class-detail-card" data-category="cardio">
+                    <div class="class-detail-img cardio-img">
+                        <span class="class-badge">Cardio</span>
+                    </div>
+                    <div class="class-detail-content">
+                        <h3 class="class-detail-title">CARDIO BLAST</h3>
+                        <p class="class-detail-desc">Heart-pumping cardio workout using treadmills, rowers, and step machines.</p>
+                        
+                        <div class="class-info-grid">
+                            <div class="class-info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Duration:</strong>
+                                    <span>50 minutes</span>
+                                </div>
+                            </div>
+                            <div class="class-info-item">
+                                <i class="fas fa-fire"></i>
+                                <div>
+                                    <strong>Intensity:</strong>
+                                    <span>Medium-High</span>
+                                </div>
+                            </div>
+                            <div class="class-info-item">
+                                <i class="fas fa-user-friends"></i>
+                                <div>
+                                    <strong>Level:</strong>
+                                    <span>Beginner+</span>
+                                </div>
+                            </div>
+                            <div class="class-info-item">
+                                <i class="fas fa-dumbbell"></i>
+                                <div>
+                                    <strong>Equipment:</strong>
+                                    <span>Treadmill, Rower</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="class-schedule">
+                            <h4>Schedule:</h4>
+                            <ul class="schedule-list">
+                                <li>Tue & Thu: 9:00 AM, 6:00 PM</li>
+                                <li>Wed & Fri: 7:00 AM</li>
+                                <li>Sat: 9:30 AM</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="btn btn-primary book-class-btn">Book This Class</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekly Schedule View (Hidden by default) -->
+    <section class="weekly-schedule section-padding" id="scheduleView" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">WEEKLY SCHEDULE</h2>
+            <div class="schedule-table-container">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Morning Sessions -->
+                        <tr class="time-slot">
+                            <td class="time-label">6:00 AM</td>
+                            <td><span class="class-slot strength">Iron Strength</span></td>
+                            <td><span class="class-slot cardio">Cardio Blast</span></td>
+                            <td><span class="class-slot strength">Iron Strength</span></td>
+                            <td><span class="class-slot cardio">Cardio Blast</span></td>
+                            <td><span class="class-slot strength">Iron Strength</span></td>
+                            <td><span class="class-slot yoga">Power Yoga</span></td>
+                            <td class="closed">Closed</td>
+                        </tr>
+                        
+                        <tr class="time-slot">
+                            <td class="time-label">7:30 AM</td>
+                            <td><span class="class-slot yoga">Power Yoga</span></td>
+                            <td><span class="class-slot hiit">Bull HIIT</span></td>
+                            <td><span class="class-slot yoga">Power Yoga</span></td>
+                            <td><span class="class-slot hiit">Bull HIIT</span></td>
+                            <td><span class="class-slot yoga">Power Yoga</span></td>
+                            <td><span class="class-slot cycling">Cycling Rush</span></td>
+                            <td class="closed">Closed</td>
+                        </tr>
+                        
+                        <!-- Evening Sessions -->
+                        <tr class="time-slot">
+                            <td class="time-label">5:30 PM</td>
+                            <td><span class="class-slot hiit">Bull HIIT</span></td>
+                            <td><span class="class-slot cardio">Cardio Blast</span></td>
+                            <td><span class="class-slot hiit">Bull HIIT</span></td>
+                            <td><span class="class-slot cardio">Cardio Blast</span></td>
+                            <td><span class="class-slot hiit">Bull HIIT</span></td>
+                            <td class="closed">Closed</td>
+                            <td class="closed">Closed</td>
+                        </tr>
+                        
+                        <tr class="time-slot">
+                            <td class="time-label">6:00 PM</td>
+                            <td><span class="class-slot strength">Iron Strength</span></td>
+                            <td><span class="class-slot yoga">Power Yoga</span></td>
+                            <td><span class="class-slot strength">Iron Strength</span></td>
+                            <td><span class="class-slot yoga">Power Yoga</span></td>
+                            <td><span class="class-slot strength">Iron Strength</span></td>
+                            <td class="closed">Closed</td>
+                            <td class="closed">Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="schedule-legend">
+                    <div class="legend-item">
+                        <span class="legend-color strength"></span>
+                        <span>Strength Training</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color hiit"></span>
+                        <span>HIIT</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color yoga"></span>
+                        <span>Yoga & Flexibility</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color cardio"></span>
+                        <span>Cardio</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color cycling"></span>
+                        <span>Cycling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Book Your Class</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="className">Selected Class:</label>
+                        <input type="text" id="className" class="form-control" readonly>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="classDate">Select Date:</label>
+                        <input type="date" id="classDate" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="classTime">Select Time:</label>
+                        <select id="classTime" class="form-control" required>
+                            <option value="">Choose time slot</option>
+                            <option value="6:00 AM">6:00 AM</option>
+                            <option value="7:30 AM">7:30 AM</option>
+                            <option value="5:30 PM">5:30 PM</option>
+                            <option value="6:00 PM">6:00 PM</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="userName">Your Name:</label>
+                        <input type="text" id="userName" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="userEmail">Email Address:</label>
+                        <input type="email" id="userEmail" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Same as homepage) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="1.png" alt="Iron Bull Fitness Logo" class="footer-logo-img">
+                        <div>
+                            <span class="footer-logo-title">IRON BULL FITNESS</span>
+                            <p class="footer-tagline">Forge Your Strength</p>
+                        </div>
+                    </div>
+                    <p class="footer-about">Premium fitness facility dedicated to helping you achieve your strength and wellness goals.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="classes.html" class="footer-link">Classes</a>
+                    <a href="membership.html" class="footer-link">Membership</a>
+                    <a href="facilities.html" class="footer-link">Facilities</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-heading">Contact</h3>
+                    <p class="footer-contact"><i class="fas fa-map-marker-alt"></i> 123 Iron Street, Bull City</p>
+                    <p class="footer-contact"><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p class="footer-contact"><i class="far fa-clock"></i> 24/7 for Pro & Premium Members</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-heading">Free Trial</h3>
+                    <p>Experience Iron Bull Fitness with a 3-day free trial.</p>
+                    <a href="#" class="btn btn-primary">Claim Trial</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Iron Bull Fitness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('show');
+        });
+
+        // Class Filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const classCards = document.querySelectorAll('.class-detail-card');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // Filter classes
+                const filter = button.dataset.filter;
+                
+                classCards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // View Toggle (Grid vs Schedule)
+        const viewButtons = document.querySelectorAll('.view-btn');
+        const gridView = document.getElementById('gridView');
+        const scheduleView = document.getElementById('scheduleView');
+        
+        viewButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                viewButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // Show/hide views
+                if (button.dataset.view === 'grid') {
+                    gridView.style.display = 'block';
+                    scheduleView.style.display = 'none';
+                } else {
+                    gridView.style.display = 'none';
+                    scheduleView.style.display = 'block';
+                }
+            });
+        });
+
+        // Booking Modal
+        const bookButtons = document.querySelectorAll('.book-class-btn');
+        const bookingModal = document.getElementById('bookingModal');
+        const modalClose = document.querySelector('.modal-close');
+        const classNameInput = document.getElementById('className');
+        const bookingForm = document.getElementById('bookingForm');
+        
+        bookButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const classCard = button.closest('.class-detail-card');
+                const className = classCard.querySelector('.class-detail-title').textContent;
+                
+                classNameInput.value = className;
+                bookingModal.style.display = 'flex';
+            });
+        });
+        
+        modalClose.addEventListener('click', () => {
+            bookingModal.style.display = 'none';
+        });
+        
+        bookingModal.addEventListener('click', (e) => {
+            if (e.target === bookingModal) {
+                bookingModal.style.display = 'none';
+            }
+        });
+        
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Booking submitted successfully! We\'ll send you a confirmation email.');
+            bookingModal.style.display = 'none';
+            bookingForm.reset();
+        });
+
+        // Set minimum date for booking to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('classDate').min = today;
+    </script>
+</body>
+</html>

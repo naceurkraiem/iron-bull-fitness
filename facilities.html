@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities & Amenities - Iron Bull Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery-bundle.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <img src="1.png" alt="Iron Bull Fitness Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-title">IRON BULL</span>
+                        <span class="logo-subtitle">FITNESS</span>
+                    </div>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="classes.html" class="nav-link">Classes</a>
+                    <a href="membership.html" class="nav-link">Membership</a>
+                    <a href="facilities.html" class="nav-link active">Facilities</a>
+                    <a href="#" class="nav-link btn-trial">Free Trial</a>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero facilities-hero">
+        <div class="container">
+            <h1 class="page-hero-title">FACILITIES & AMENITIES</h1>
+            <p class="page-hero-subtitle">State-of-the-art equipment and premium recovery facilities</p>
+        </div>
+    </section>
+
+    <!-- Facilities Overview -->
+    <section class="facilities-overview section-padding">
+        <div class="container">
+            <h2 class="section-title">PREMIUM FACILITIES</h2>
+            <p class="section-subtitle">Our 15,000 sq ft facility is equipped with everything you need for your fitness journey</p>
+            
+            <div class="facilities-stats">
+                <div class="stat-card">
+                    <div class="stat-number">15,000</div>
+                    <div class="stat-label">Square Feet</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Equipment Pieces</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Access</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Specialized Zones</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Equipment Gallery -->
+<section class="equipment-gallery section-padding bg-dark">
+    <div class="container">
+        <h2 class="section-title light">EQUIPMENT GALLERY</h2>
+        <div class="gallery-filter">
+            <button class="gallery-filter-btn active" data-filter="all">All Equipment</button>
+            <button class="gallery-filter-btn" data-filter="strength">Strength</button>
+            <button class="gallery-filter-btn" data-filter="cardio">Cardio</button>
+            <button class="gallery-filter-btn" data-filter="functional">Functional</button>
+            <button class="gallery-filter-btn" data-filter="freeweights">Free Weights</button>
+        </div>
+        
+        <div class="gallery-grid" id="lightgallery">
+            <!-- Strength Equipment - Use your 3.jpg -->
+            <a href="3.jpg" class="gallery-item" data-filter="strength">
+                <div class="gallery-img">
+                    <img src="3.jpg" alt="Strength Machines">
+                    <div class="gallery-overlay">
+                        <h3>Strength Machines</h3>
+                        <p>Hammer Strength, Life Fitness, Technogym</p>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- HIIT/Cardio Equipment - Use your 8.jpg -->
+            <a href="2.jpg" class="gallery-item" data-filter="cardio">
+                <div class="gallery-img">
+                    <img src="2.jpg" alt="Cardio Equipment">
+                    <div class="gallery-overlay">
+                        <h3>Cardio Zone</h3>
+                        <p>Treadmills, Ellipticals, Rowers, Bikes</p>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Free Weights - Use 2.jpg -->
+            <a href="9.jpg" class="gallery-item" data-filter="freeweights">
+                <div class="gallery-img">
+                    <img src="9.jpg" alt="Free Weights">
+                    <div class="gallery-overlay">
+                        <h3>Free Weights Area</h3>
+                        <p>Dumbbells, Barbells, Weight Plates</p>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Functional Training - Use 4.jpeg -->
+            <a href="4.jpeg" class="gallery-item" data-filter="functional">
+                <div class="gallery-img">
+                    <img src="8.jpg" alt="Functional Training">
+                    <div class="gallery-overlay">
+                        <h3>Functional Zone</h3>
+                        <p>TRX, Kettlebells, Battle Ropes, Plyo Boxes</p>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Locker Room - Use 6.jpg -->
+            <a href="6.jpg" class="gallery-item" data-filter="amenities">
+                <div class="gallery-img">
+                    <img src="6.jpg" alt="Locker Room">
+                    <div class="gallery-overlay">
+                        <h3>Locker Rooms</h3>
+                        <p>Spacious lockers with digital locks</p>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Recovery Area - Use 6.jpg -->
+            <a href="10.jpg" class="gallery-item" data-filter="amenities">
+                <div class="gallery-img">
+                    <img src="10.jpg" alt="Recovery Area">
+                    <div class="gallery-overlay">
+                        <h3>Recovery Area</h3>
+                        <p>Sauna, Steam Room, Massage Chairs</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Facility Zones -->
+    <section class="facility-zones section-padding">
+        <div class="container">
+            <h2 class="section-title">FACILITY ZONES</h2>
+            <div class="zones-grid">
+                <div class="zone-card">
+                    <div class="zone-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Strength Zone</h3>
+                    <p>Comprehensive selection of machines, racks, and platforms for all strength training needs.</p>
+                    <ul class="zone-features">
+                        <li>Power racks & squat racks</li>
+                        <li>Smith machines</li>
+                        <li>Cable crossover stations</li>
+                        <li>Leg press & hack squat</li>
+                    </ul>
+                </div>
+                
+                <div class="zone-card">
+                    <div class="zone-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Cardio Zone</h3>
+                    <p>Latest cardio equipment with individual entertainment systems and heart rate monitoring.</p>
+                    <ul class="zone-features">
+                        <li>30+ treadmills</li>
+                        <li>Elliptical trainers</li>
+                        <li>Rowing machines</li>
+                        <li>Assault bikes & stair climbers</li>
+                    </ul>
+                </div>
+                
+                <div class="zone-card">
+                    <div class="zone-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Functional Training</h3>
+                    <p>Open space for functional movement training, HIIT, and group workouts.</p>
+                    <ul class="zone-features">
+                        <li>Turf running track</li>
+                        <li>Battle ropes & sleds</li>
+                        <li>Plyometric boxes</li>
+                        <li>Kettlebell & medicine ball area</li>
+                    </ul>
+                </div>
+                
+                <div class="zone-card">
+                    <div class="zone-icon">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                    <h3>Free Weights</h3>
+                    <p>Extensive free weights area with Olympic lifting platforms and bumper plates.</p>
+                    <ul class="zone-features">
+                        <li>Dumbbells 5-150 lbs</li>
+                        <li>Barbells & weight plates</li>
+                        <li>Bench press stations</li>
+                        <li>Deadlift platforms</li>
+                    </ul>
+                </div>
+                
+                <div class="zone-card">
+                    <div class="zone-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Recovery Zone</h3>
+                    <p>Dedicated area for post-workout recovery and relaxation.</p>
+                    <ul class="zone-features">
+                        <li>Finnish sauna</li>
+                        <li>Steam room</li>
+                        <li>Massage chairs</li>
+                        <li>Foam rolling area</li>
+                    </ul>
+                </div>
+                
+                <div class="zone-card">
+                    <div class="zone-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Supplement Bar</h3>
+                    <p>Fuel your workouts with premium supplements and refreshments.</p>
+                    <ul class="zone-features">
+                        <li>Protein shakes & smoothies</li>
+                        <li>Pre-workout drinks</li>
+                        <li>Energy bars & snacks</li>
+                        <li>Member discount</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities -->
+    <section class="amenities section-padding bg-dark">
+        <div class="container">
+            <h2 class="section-title light">PREMIUM AMENITIES</h2>
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-shower"></i>
+                    </div>
+                    <h3>Luxury Showers</h3>
+                    <p>Rainfall showerheads with premium toiletries and towel service.</p>
+                </div>
+                
+                <div class="amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Digital Lockers</h3>
+                    <p>Secure digital lockers with phone app integration for keyless access.</p>
+                </div>
+                
+                <div class="amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>High-Speed WiFi</h3>
+                    <p>Fiber optic internet throughout the facility for streaming and work.</p>
+                </div>
+                
+                <div class="amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-tablet-alt"></i>
+                    </div>
+                    <h3>Smart Equipment</h3>
+                    <p>Equipment with touchscreens, workout tracking, and entertainment.</p>
+                </div>
+                
+                <div class="amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Laundry Service</h3>
+                    <p>Complimentary towel service and workout clothes laundry.</p>
+                </div>
+                
+                <div class="amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Free Parking</h3>
+                    <p>Secure underground parking with EV charging stations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floor Plan -->
+    <section class="floor-plan section-padding">
+        <div class="container">
+            <h2 class="section-title">FACILITY FLOOR PLAN</h2>
+            <div class="floor-plan-container">
+                <div class="floor-plan-image">
+                    <div class="floor-plan-key">
+                        <div class="key-item">
+                            <span class="key-color strength"></span>
+                            <span>Strength Zone</span>
+                        </div>
+                        <div class="key-item">
+                            <span class="key-color cardio"></span>
+                            <span>Cardio Zone</span>
+                        </div>
+                        <div class="key-item">
+                            <span class="key-color functional"></span>
+                            <span>Functional Area</span>
+                        </div>
+                        <div class="key-item">
+                            <span class="key-color freeweights"></span>
+                            <span>Free Weights</span>
+                        </div>
+                        <div class="key-item">
+                            <span class="key-color amenities"></span>
+                            <span>Amenities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="1.png" alt="Iron Bull Fitness Logo" class="footer-logo-img">
+                        <div>
+                            <span class="footer-logo-title">IRON BULL FITNESS</span>
+                            <p class="footer-tagline">Forge Your Strength</p>
+                        </div>
+                    </div>
+                    <p class="footer-about">Premium fitness facility dedicated to helping you achieve your strength and wellness goals.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="classes.html" class="footer-link">Classes</a>
+                    <a href="membership.html" class="footer-link">Membership</a>
+                    <a href="facilities.html" class="footer-link">Facilities</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-heading">Contact</h3>
+                    <p class="footer-contact"><i class="fas fa-map-marker-alt"></i> 123 Iron Street, Bull City</p>
+                    <p class="footer-contact"><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p class="footer-contact"><i class="far fa-clock"></i> 24/7 for Pro & Premium Members</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-heading">Free Trial</h3>
+                    <p>Experience Iron Bull Fitness with a 3-day free trial.</p>
+                    <a href="#" class="btn btn-primary">Claim Trial</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Iron Bull Fitness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightgallery Script -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/fullscreen/lg-fullscreen.min.js"></script>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('show');
+        });
+
+        // Gallery Filtering
+        const galleryFilterBtns = document.querySelectorAll('.gallery-filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        galleryFilterBtns.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                galleryFilterBtns.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // Filter gallery items
+                const filter = button.dataset.filter;
+                
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.dataset.filter === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Initialize LightGallery
+        const gallery = document.getElementById('lightgallery');
+        if (gallery) {
+            lightGallery(gallery, {
+                selector: '.gallery-item',
+                download: false,
+                counter: false,
+                plugins: [lgZoom, lgFullscreen]
+            });
+        }
+
+        // Virtual Tour Button
+        document.getElementById('startTour').addEventListener('click', function() {
+            alert('Virtual tour would launch here. In a real implementation, this would open a 360° interactive tour.');
+        });
+
+        // Equipment brands animation
+        const brandLogos = document.querySelectorAll('.brand-logo');
+        brandLogos.forEach((logo, index) => {
+            logo.style.animationDelay = `${index * 0.1}s`;
+        });
+
+        // Interactive floor plan (basic example)
+        const floorPlanKey = document.querySelector('.floor-plan-key');
+        const keyItems = floorPlanKey.querySelectorAll('.key-item');
+        
+        keyItems.forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                const colorClass = this.querySelector('.key-color').className.split(' ')[1];
+                document.querySelectorAll('.zone-card').forEach(card => {
+                    if (card.querySelector('h3').textContent.toLowerCase().includes(colorClass)) {
+                        card.style.transform = 'scale(1.05)';
+                        card.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)';
+                    }
+                });
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                document.querySelectorAll('.zone-card').forEach(card => {
+                    card.style.transform = 'scale(1)';
+                    card.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

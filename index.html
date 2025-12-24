@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Bull Fitness - Forge Your Strength</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <img src="1.png" alt="Iron Bull Fitness Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-title">IRON BULL</span>
+                        <span class="logo-subtitle">FITNESS</span>
+                    </div>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="classes.html" class="nav-link">Classes</a>
+                    <a href="membership.html" class="nav-link">Membership</a>
+                    <a href="facilities.html" class="nav-link">Facilities</a>
+                    <a href="#" class="nav-link btn-trial">Free Trial</a>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">FORGE YOUR <span class="highlight">STRENGTH</span></h1>
+            <p class="hero-subtitle">Premium fitness facility with state-of-the-art equipment and expert-led classes</p>
+            <div class="hero-buttons">
+                <a href="membership.html" class="btn btn-primary">Join Now</a>
+                <a href="classes.html" class="btn btn-secondary">View Classes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features section-padding">
+        <div class="container">
+            <h2 class="section-title">WHY CHOOSE IRON BULL</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3 class="feature-title">Premium Equipment</h3>
+                    <p class="feature-desc">Latest strength and cardio machines from top brands</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="feature-title">Expert Trainers</h3>
+                    <p class="feature-desc">Certified professionals to guide your fitness journey</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="feature-title">24/7 Access</h3>
+                    <p class="feature-desc">Work out on your schedule with round-the-clock access</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="feature-title">Recovery Amenities</h3>
+                    <p class="feature-desc">Sauna, steam room, and massage therapy available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Calculator -->
+    <section class="calculator section-padding bg-dark">
+        <div class="container">
+            <h2 class="section-title light">FIND YOUR PLAN</h2>
+            <div class="calculator-container">
+                <div class="calculator-controls">
+                    <div class="calc-group">
+                        <label for="planType">Membership Type</label>
+                        <select id="planType" class="calc-select">
+                            <option value="basic">Basic</option>
+                            <option value="pro" selected>Pro</option>
+                            <option value="premium">Premium</option>
+                        </select>
+                    </div>
+                    
+                    <div class="calc-group">
+                        <label for="months">Months: <span id="monthValue">12</span></label>
+                        <input type="range" id="months" min="1" max="12" value="12" class="calc-slider">
+                    </div>
+                    
+                    <div class="calc-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="familyPlan"> Include Family Plan
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="calculator-result">
+                    <h3 class="calc-price">$<span id="totalPrice">708</span></h3>
+                    <p class="calc-detail">$<span id="monthlyPrice">59</span> / month</p>
+                    <p class="calc-savings">Save $<span id="savings">60</span> with annual plan</p>
+                    <a href="membership.html" class="btn btn-primary">View All Plans</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Class Preview -->
+<section class="classes-preview section-padding">
+    <div class="container">
+        <h2 class="section-title">POPULAR CLASSES</h2>
+        <div class="classes-grid">
+            <!-- Strength Class -->
+            <div class="class-card">
+                <img src="3.jpg" alt="Strength Training Class" class="class-img">
+                <div class="class-info">
+                    <h3 class="class-name">Iron Strength</h3>
+                    <p class="class-time"><i class="far fa-clock"></i> Mon, Wed, Fri | 6:00 PM</p>
+                    <a href="classes.html" class="btn-small">Details</a>
+                </div>
+            </div>
+            
+            <!-- HIIT Class -->
+            <div class="class-card">
+                <img src="8.jpg" alt="HIIT Workout Class" class="class-img">
+                <div class="class-info">
+                    <h3 class="class-name">Bull HIIT</h3>
+                    <p class="class-time"><i class="far fa-clock"></i> Tue, Thu | 7:30 AM</p>
+                    <a href="classes.html" class="btn-small">Details</a>
+                </div>
+            </div>
+            
+            <!-- Yoga Class -->
+            <div class="class-card">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=500&fit=crop" alt="Yoga Class" class="class-img">
+                <div class="class-info">
+                    <h3 class="class-name">Power Yoga</h3>
+                    <p class="class-time"><i class="far fa-clock"></i> Daily | 8:00 AM</p>
+                    <a href="classes.html" class="btn-small">Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="classes.html" class="btn btn-secondary">View Full Schedule</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section-padding bg-dark">
+        <div class="container">
+            <h2 class="section-title light">MEMBER STORIES</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">"Transformed my fitness in 6 months. Best gym in the city!"</div>
+                    <div class="testimonial-author">- Alex R.</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">"24/7 access fits my crazy schedule. Equipment is always pristine."</div>
+                    <div class="testimonial-author">- Jamie L.</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">"The community here keeps me motivated. More than just a gym."</div>
+                    <div class="testimonial-author">- Taylor M.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="1.png" alt="Iron Bull Fitness Logo" class="footer-logo-img">
+                        <div>
+                            <span class="footer-logo-title">IRON BULL FITNESS</span>
+                            <p class="footer-tagline">Forge Your Strength</p>
+                        </div>
+                    </div>
+                    <p class="footer-about">Premium fitness facility dedicated to helping you achieve your strength and wellness goals.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="classes.html" class="footer-link">Classes</a>
+                    <a href="membership.html" class="footer-link">Membership</a>
+                    <a href="facilities.html" class="footer-link">Facilities</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-heading">Contact</h3>
+                    <p class="footer-contact"><i class="fas fa-map-marker-alt"></i> 123 Iron Street, Bull City</p>
+                    <p class="footer-contact"><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p class="footer-contact"><i class="far fa-clock"></i> 24/7 for Pro & Premium Members</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-heading">Free Trial</h3>
+                    <p>Experience Iron Bull Fitness with a 3-day free trial.</p>
+                    <a href="#" class="btn btn-primary">Claim Trial</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Iron Bull Fitness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('show');
+        });
+
+        // Membership Calculator
+        const prices = { basic: 29, pro: 59, premium: 99 };
+        
+        function updateCalculator() {
+            const planType = document.getElementById('planType').value;
+            const months = parseInt(document.getElementById('months').value);
+            const familyPlan = document.getElementById('familyPlan').checked;
+            
+            let monthlyPrice = prices[planType];
+            if (familyPlan) monthlyPrice += 20;
+            
+            const totalPrice = monthlyPrice * months;
+            const savings = months >= 12 ? Math.floor(monthlyPrice * months * 0.1) : 0;
+            const finalPrice = totalPrice - savings;
+            
+            document.getElementById('monthValue').textContent = months;
+            document.getElementById('monthlyPrice').textContent = monthlyPrice;
+            document.getElementById('totalPrice').textContent = finalPrice;
+            document.getElementById('savings').textContent = savings;
+        }
+        
+        document.getElementById('planType').addEventListener('change', updateCalculator);
+        document.getElementById('months').addEventListener('input', updateCalculator);
+        document.getElementById('familyPlan').addEventListener('change', updateCalculator);
+        
+        // Initialize calculator
+        updateCalculator();
+    </script>
+</body>
+</html>
